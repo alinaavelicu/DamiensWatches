@@ -1,0 +1,105 @@
+:root {
+  --bc-color: #e3e6f3;
+  --bold-color: #585858;
+  --box-shadow-button: 0 0 0 1px rgba(50, 50, 93, 0.1),
+    0 2px 5px 0 rgba(50, 50, 93, 0.08), 0 1px 1.5px 0 rgba(0, 0, 0, 0.07),
+    0 1px 2px 0 rgba(0, 0, 0, 0.08);
+  --box-shadow-button-hover: 0 0 0 1px rgba(50, 50, 93, 0.1),
+    0 2px 5px 0 rgba(50, 50, 93, 0.1), 0 3px 9px 0 rgba(50, 50, 93, 0.08),
+    0 1px 1.5px 0 rgba(0, 0, 0, 0.08), 0 1px 2px 0 rgba(0, 0, 0, 0.08);
+}
+
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans", sans-serif;
+  position: relative;
+}
+
+.header {
+  display: flex;
+  margin: auto;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 80px;
+  background-color: var(--bc-color);
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.06);
+  color: var(--bold-color);
+}
+
+.logo {
+  width: 100px;
+  height: 100px;
+}
+
+.title {
+  color: var(--bold-color);
+  margin-right: 300px;
+  font-size: 30px;
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.buttons li {
+  list-style: none;
+  padding: 0 20px;
+}
+
+.first {
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--bold-color);
+}
+
+.second {
+  box-shadow: var(--box-shadow-button);
+  border-radius: 4px;
+  background-color: var(--bc-color);
+  color: var(--bold-color);
+  border-radius: 4px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 15px 20px;
+  font-size: 16px;
+  font-weight: 600;
+  border: none;
+  outline: none;
+  transition: all 0.25s ease;
+  color: var(--bold-color);
+  cursor: pointer;
+  letter-spacing: 0.05em;
+}
+
+.buttons .second:hover {
+  box-shadow: var(--box-shadow-button-hover);
+  transform: translate(2px, -2px);
+  letter-spacing: 0.25em;
+  border-radius: 40px;
+}
+
+.footer {
+  height: 200px;
+  background-color: var(--bc-color);
+  position: relative;
+  z-index: -2;
+}
+
+.footer-inner {
+  width: 100vh;
+  position: fixed;
+  left: 50%;
+  bottom: 0;
+  margin-left: -400px;
+  z-index: -1;
+  border: 1px solid transparent;
+  color: #fff;
+  padding: 1px;
+  padding-bottom: 30px;
+}
